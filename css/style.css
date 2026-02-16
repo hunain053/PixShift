@@ -759,7 +759,7 @@
       overflow: hidden;
 
     }
-    .brand { overflow: hidden; }
+    .brand { overflow: hidden; margin-right: 150px; }
     .brand-img { height: 145px; width: auto; object-position: left center; }
   
     footer { margin-top: 30px; padding: 24px 20px; font-size: 12px; }
@@ -776,7 +776,7 @@
       gap: 8px;
       overflow: hidden;
     }
-    .brand { overflow: hidden; height: 58px; }
+    .brand { overflow: hidden; height: 58px; margin-right: auto; }
     .brand-img { height: 145px; width: auto; object-position: left center; }
     .nav-actions { gap: 6px; }
   
@@ -872,9 +872,19 @@
       height: 165px;
       overflow: hidden;
       /* max-height: 52px; */
+      margin-right: 78px;
     }
     .nav-actions {
       gap: 6px;
+      margin-right: 10px;
+    }
+    .nav-btn{
+      width: 33px;
+      height: 33px;
+    }
+    .theme-toggle{
+      width: 33px;
+      height: 33px;
     }
   }
 
@@ -926,8 +936,12 @@ html.light footer::before {
 /* FOOTER RESPONSIVE */
 @media (max-width: 700px) {
   footer {
-    margin-top: 30px;
-    padding: 24px 20px;
+    margin-top: 12px;
+    padding: 0 20px;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
     width: 100%;
   }
@@ -939,8 +953,12 @@ html.light footer::before {
 
 @media (max-width: 520px) {
   footer {
-    margin-top: 20px;
-    padding: 20px 16px;
+    margin-top: 10px;
+    padding: 0 16px;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 11px;
     width: 100%;
   }
